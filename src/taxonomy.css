@@ -1,0 +1,113 @@
+:root {
+  --ink: #161a22;
+  --line: #c7d1db;
+  --brand: #1a4a76;
+  --panel: rgba(248, 252, 255, 0.92);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(26, 74, 118, 0.2), transparent 35%),
+    linear-gradient(180deg, #e9eff7 0%, #dde7f2 100%);
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.top-nav {
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem;
+  background: rgba(242, 248, 255, 0.92);
+}
+
+.top-nav a {
+  color: var(--brand);
+}
+
+.top-nav a.is-active {
+  color: #fff;
+  background: var(--brand);
+}
+
+.hero {
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.35rem 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--brand);
+  font-family: Rockwell, Georgia, serif;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.page-flow {
+  margin: 0.45rem 0 0;
+  color: #385777;
+}
+
+main {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.panel {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  padding: 0.9rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.45rem;
+  color: var(--brand);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 540px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.6;
+}

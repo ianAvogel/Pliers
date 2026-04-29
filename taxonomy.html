@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a4a76" />
+    <title>Plier Taxonomy</title>
+    <meta name="description" content="Compare Plier, Taco, and Sandwich structures with examples in one taxonomy view." />
+    <link rel="canonical" href="/taxonomy.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Plier Taxonomy" />
+    <meta property="og:description" content="A side-by-side category map of starch type, structure, and eating action." />
+    <meta property="og:url" content="/taxonomy.html" />
+    <script>
+      (() => {
+        const absoluteUrl = new URL(window.location.pathname, window.location.origin).toString()
+        const canonical = document.querySelector('link[rel="canonical"]')
+        const ogUrl = document.querySelector('meta[property="og:url"]')
+        if (canonical) canonical.href = absoluteUrl
+        if (ogUrl) ogUrl.content = absoluteUrl
+      })()
+    </script>
+    <meta property="og:image" content="/og-card.svg" />
+    <meta name="twitter:image" content="/og-card.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Plier Taxonomy" />
+    <meta name="twitter:description" content="The hierarchy and hall of fame of Plier classification." />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/taxonomy.js"></script>
+  </body>
+</html>

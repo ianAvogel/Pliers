@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b6d77" />
+    <title>Plier Case Law</title>
+    <meta name="description" content="Review Plier Method rulings and open debates for tricky food classification cases." />
+    <link rel="canonical" href="/case-law.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Plier Case Law" />
+    <meta property="og:description" content="Applied decisions for edge-case foods under the Plier Method." />
+    <meta property="og:url" content="/case-law.html" />
+    <script>
+      (() => {
+        const absoluteUrl = new URL(window.location.pathname, window.location.origin).toString()
+        const canonical = document.querySelector('link[rel="canonical"]')
+        const ogUrl = document.querySelector('meta[property="og:url"]')
+        if (canonical) canonical.href = absoluteUrl
+        if (ogUrl) ogUrl.content = absoluteUrl
+      })()
+    </script>
+    <meta property="og:image" content="/og-card.svg" />
+    <meta name="twitter:image" content="/og-card.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Plier Case Law" />
+    <meta name="twitter:description" content="Where doctrine meets disputed foods." />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/case-law.js"></script>
+  </body>
+</html>

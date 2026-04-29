@@ -1,0 +1,97 @@
+:root {
+  --ink: #1e1714;
+  --line: #d7c7bd;
+  --brand: #9a2a18;
+  --panel: rgba(255, 252, 248, 0.9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(154, 42, 24, 0.16), transparent 35%),
+    linear-gradient(180deg, #f8eee6 0%, #f1e1d5 100%);
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.top-nav {
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem;
+  background: rgba(255, 247, 241, 0.94);
+}
+
+.top-nav a {
+  color: var(--brand);
+}
+
+.top-nav a.is-active {
+  color: #fff;
+  background: var(--brand);
+}
+
+.hero {
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  color: var(--brand);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.35rem 0;
+  font-size: clamp(2rem, 6vw, 3rem);
+  color: var(--brand);
+  font-family: Rockwell, Georgia, serif;
+}
+
+.subtitle {
+  margin: 0;
+}
+
+.page-flow {
+  margin: 0.45rem 0 0;
+  color: #5b4136;
+}
+
+.grid {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--panel);
+  padding: 0.9rem;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.04rem;
+  color: var(--brand);
+}
+
+.card p {
+  margin: 0.4rem 0 0;
+  line-height: 1.55;
+}

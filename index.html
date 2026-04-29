@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#b11f24" />
+    <title>The Plier Manifesto</title>
+    <meta name="description" content="A concise guide to the Plier Method food taxonomy, with definitions, examples, rulings, and amendments." />
+    <link rel="canonical" href="/index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Plier Manifesto" />
+    <meta property="og:description" content="Explore the Plier Method: foundations, taxonomy, case law, and amendments." />
+    <meta property="og:url" content="/index.html" />
+    <script>
+      (() => {
+        const absoluteUrl = new URL(window.location.pathname, window.location.origin).toString()
+        const canonical = document.querySelector('link[rel="canonical"]')
+        const ogUrl = document.querySelector('meta[property="og:url"]')
+        if (canonical) canonical.href = absoluteUrl
+        if (ogUrl) ogUrl.content = absoluteUrl
+      })()
+    </script>
+    <meta property="og:image" content="/og-card.svg" />
+    <meta name="twitter:image" content="/og-card.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="The Plier Manifesto" />
+    <meta name="twitter:description" content="A structured, multi-page culinary taxonomy centered on the Plier concept." />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

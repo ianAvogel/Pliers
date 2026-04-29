@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#9a2a18" />
+    <title>Plier Foundations</title>
+    <meta name="description" content="Read the three pillars and boundary rules that define the Plier Method." />
+    <link rel="canonical" href="/principles.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Plier Foundations" />
+    <meta property="og:description" content="Leavened starch, unified hinge, and pinch mechanics explained clearly." />
+    <meta property="og:url" content="/principles.html" />
+    <script>
+      (() => {
+        const absoluteUrl = new URL(window.location.pathname, window.location.origin).toString()
+        const canonical = document.querySelector('link[rel="canonical"]')
+        const ogUrl = document.querySelector('meta[property="og:url"]')
+        if (canonical) canonical.href = absoluteUrl
+        if (ogUrl) ogUrl.content = absoluteUrl
+      })()
+    </script>
+    <meta property="og:image" content="/og-card.svg" />
+    <meta name="twitter:image" content="/og-card.svg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Plier Foundations" />
+    <meta name="twitter:description" content="The core rules behind the Plier Method." />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/principles.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">The Plier Manifesto</title>
+  <desc id="desc">A New Culinary Taxonomy</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7efe0"/>
+      <stop offset="55%" stop-color="#f2dfc6"/>
+      <stop offset="100%" stop-color="#e9d0af"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.9" cy="0.1" r="0.7">
+      <stop offset="0%" stop-color="#b11f24" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#b11f24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(94 104)">
+    <rect x="0" y="0" width="1012" height="420" rx="20" fill="#fff9ef" stroke="#dbc8b8" stroke-width="3"/>
+    <text x="56" y="120" font-size="34" font-family="Trebuchet MS, Arial, sans-serif" fill="#761014" letter-spacing="4" text-transform="uppercase">Established 2026</text>
+    <text x="56" y="220" font-size="86" font-family="Impact, Haettenschweiler, Arial Narrow Bold, sans-serif" fill="#b11f24" letter-spacing="2">THE PLIER MANIFESTO</text>
+    <text x="56" y="290" font-size="38" font-family="Rockwell, Georgia, serif" fill="#5f4a3f">A New Culinary Taxonomy</text>
+    <text x="56" y="362" font-size="30" font-family="Trebuchet MS, Arial, sans-serif" fill="#5f4a3f">Foundations · Taxonomy · Case Law · Amendments</text>
+  </g>
+</svg>

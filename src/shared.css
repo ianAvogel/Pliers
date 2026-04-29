@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -48px;
+  z-index: 100;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 2px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border-radius: 999px;
+  padding: 0.45rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+}

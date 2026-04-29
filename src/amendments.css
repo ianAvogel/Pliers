@@ -1,0 +1,148 @@
+:root {
+  --ink: #1c1924;
+  --panel: rgba(255, 255, 255, 0.9);
+  --line: #cabfdf;
+  --brand: #234a9d;
+  --brand-soft: #dce7ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 14% 8%, rgba(35, 74, 157, 0.2), transparent 32%),
+    radial-gradient(circle at 86% 92%, rgba(130, 57, 128, 0.16), transparent 34%),
+    linear-gradient(180deg, #f1ecff 0%, #e7e0f8 100%);
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.top-nav {
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.45rem;
+  background: rgba(242, 236, 255, 0.9);
+}
+
+.top-nav a {
+  color: var(--brand);
+}
+
+.top-nav a.is-active {
+  color: #fff;
+  background: var(--brand);
+}
+
+.amend-header {
+  text-align: center;
+}
+
+.label {
+  margin: 0;
+  color: var(--brand);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0.35rem 0;
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  color: var(--brand);
+  font-family: Rockwell, Georgia, serif;
+}
+
+.amend-header p {
+  margin: 0;
+}
+
+.page-flow {
+  margin-top: 0.45rem;
+  color: #4f4b77;
+}
+
+.actions {
+  margin-top: 0.85rem;
+  display: flex;
+  gap: 0.55rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.actions a,
+.actions button {
+  border: 1px solid var(--brand);
+  background: #fff;
+  color: var(--brand);
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.actions a:hover,
+.actions button:hover {
+  background: var(--brand-soft);
+}
+
+.timeline {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.entry {
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--brand);
+  border-radius: 12px;
+  padding: 0.95rem;
+  background: var(--panel);
+  box-shadow: 0 8px 22px rgba(41, 22, 62, 0.1);
+}
+
+.version {
+  margin: 0;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #5e4d87;
+  font-weight: 700;
+}
+
+.entry h2 {
+  margin: 0.35rem 0;
+  font-size: 1.08rem;
+}
+
+.entry p {
+  margin: 0;
+  line-height: 1.62;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .entry {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
